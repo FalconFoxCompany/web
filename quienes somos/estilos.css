@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Helvetica LT Std';
+	background: #F1F0BA
+}
+
+.contenedor{
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo{
+	color: #934f0f;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* Header */
+
+
+
+nav{
+	width: 100%;
+	display: flex;
+	padding: 5px 50px 0 0;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	background: hsla(29,81%,32%,0.70);
+	height: 73px;
+	z-index: 700;
+}
+
+.texlog{
+	font-size: 15px;
+	color: #000;
+	font-weight: 100;
+	font-family: 'manga style';
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.navegacion ul{
+	text-align: right;
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a{
+	color: #FFFFFF;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 16px;
+	margin-right: 10px;
+	line-height: 20px;
+	padding: 12px;
+}
+
+.menu li a:hover{
+	text-decoration: underline;
+	background: hsla(29,81%,32%,0.60);
+	border-radius: 10px;
+	transition: all .5s;
+}
+
+/* submenu */
+
+.nosmenu ul{
+	list-style: none;
+}
+
+.nosmenu{
+	position: absolute;
+	background: hsla(0,0%,20%,0.80);
+	width: 130%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	border-radius: 10px;
+	margin-top: 11px;
+}
+
+.nosmenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+}
+
+.menu li:hover .nosmenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.nosmenuc ul{
+	list-style: none;
+}
+
+.nosmenuc{
+	position: absolute;
+	background: hsla(0,0%,20%,0.80);
+	width: 250%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	border-radius: 10px;
+	margin-top: 11px;
+}
+
+.nosmenuc li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+}
+
+.menu li:hover .nosmenuc{
+	visibility: visible;
+	opacity: 1;
+}
+
+.icono{
+	width: 70px;
+}
+
+/* Contenido */
+
+html{
+	scroll-behavior: smooth;
+}
+
+section{
+	height: 650px;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 40px;
+	align-items: center;
+}
+
+section h2{
+	font-size: 50px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section p{
+	margin-bottom: 15px;
+	text-align: justify;
+	max-width: 650px;
+}
+
+section a{
+	display: inline-block;
+	padding: 7px 0;
+	color: #283773;
+	text-decoration: none;
+	width: 200px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	background: #fff;
+}
+
+section a:hover{
+	border: 1px solid #000;
+}
+
+section img{
+	height: 60%;
+}
+
+section:nth-child(2){
+	background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+section:nth-child(3){
+	background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+section:nth-child(4){
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+section:nth-child(5){
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+section:nth-child(6){
+	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+section:nth-child(7){
+	background-image: linear-gradient(120deg, #9795f0 0%, #fbc8d4 100%);
+}
+
+/* Footer */
+
+footer{
+	background: #414141;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+	text-align: center;
+}
+
+.content-foo h4{
+	color: #fff;
+	border-bottom: 3px solid #f1f0ba;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.content-foo p{
+	color: #ccc;
+}
+
+.titulo-final{
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+	color: #9e9797;
+}
+
+@media screen and (max-widht:1000px){
+	section{
+		flex-direction: column-reverse;
+	}
+
+	section > img{
+		height: 40%;
+	}
+
+	.context{
+		text-align: center;
+	}
+}
+
+@media screen and (max-widht:600px){
+
+	section > img{
+		height: 25%;
+	}
+}
