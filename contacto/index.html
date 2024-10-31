@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FalconFox</title>
+	<link rel="icon" href="imagenes/Isologo 2.png">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navegacion">
+			<div class="texlog">FALCONFOX COMPANY</div>
+			<ul class="menu">
+				<li><a href="C:/Users/zazuke/Desktop/Pagina web/inicio/index.html">Inicio</a></li>
+				<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/index.html">Portafolio</a>
+					<ul class="nosmenu">
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/Fotomontajes/index.html">Fotomontajes</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/Videos/index.html">Videos</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/Vectores/index.html">Vectores</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/marketing/index.html">Marketing</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/Retoques fotograficos/index.html">Retoques fotograficos</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/pagina portafolio/Identidades corporativas/index.html">Identidades Corporativas</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Nosotros</a>
+					<ul class="nosmenu">
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/quienes somos/index.html">¿Quienes somos?</a></li>
+						<li><a href="#">Equipo de trabajo</a></li>
+						<li><a href="C:/Users/zazuke/Desktop/Pagina web/inicio/manual.pdf" target="_blank">Manual corporativo</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a>
+					<ul class="nosmenuc">
+						<li><a href="https://wa.me/525548686070?text=Hola%20me%20gustaría%20consultar%20una%20cotización%20sobre%20tus%20servicios" target="_blank"><img class="icono" src="imagenes/wa.svg"><br>55 4868 6070</a></li>
+						<li><a href="#"><img class="icono" src="imagenes/gm.svg"><br>falcon.fox.company@gmail.com</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Siguenos</a>
+				  <ul class="nosmenu">
+						<li><a href="https://www.facebook.com/FalconFoxCompany" target="_blank"><img class="icono" src="imagenes/fb.svg"><br>Facebook</a></li>
+						<li><a href="https://www.instagram.com/falcon.fox.company/?hl=es-la" target="_blank"><img class="icono" src="imagenes/ig.svg"><br>Instagram</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="correos.php" method="POST" id="form">
+			<div class="form">
+				<h1>¡CONTACTANOS!</h1>
+				<div class="grupo">
+					<input type="text" name="nombre" id="name" required><span class="barra"></span>
+					<label>Nombre</label>
+				</div>
+				<div class="grupo">
+					<input type="email" name="email" id="email" required><span class="barra"></span>
+					<label>E-mail</label>
+				</div>
+				<div class="grupo">
+					<input type="text" name="asunto" id="asunto" required><span class="barra"></span>
+					<label>Asunto</label>
+				</div>
+				<div class="grupo">
+					<textarea name="mensaje" id="mensaje" rows="3" required></textarea><span class="barra"></span>
+					<label>Mensaje</label>
+				</div>
+				<button type="submit">Enviar</button>
+				<p class="warnings" id="warnings"></p>
+			</div>
+		</form>
+	</main>
+	<footer>
+		<div class="contenedor-footer">
+			<div class="content-foo">
+				<h4>Telefono</h4>
+				<p>55 4868 6070</p>
+			</div>
+			<div class="content-foo">
+				<h4>E-mail</h4>
+				<p>falcon.fox.company@gmail.com</p>
+			</div>
+			<div class="content-foo">
+				<h4>Direccion</h4>
+				<p>Panelillos Mz. 35 Lt. 20 Casa 2<br> Coacalco de Berriozabal, México, México</p>
+			</div>
+		</div>
+		<h2 class="titulo-final">&copy; FalconFox Company</h2>
+	</footer>
+	<script src="app.js"></script>
+</body>
+	
+</html>
+
